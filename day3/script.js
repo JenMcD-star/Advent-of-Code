@@ -4,7 +4,7 @@ let input = require("fs").readFileSync("./input.txt", "utf-8").split("\n");
 let alphabet = "_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".split(
   ""
 );
-//this will told the prority values as they add up
+//this will told the priority values as they add up
 let total = 0;
 
 for (i = 0; i < input.length; i++) {
@@ -22,7 +22,7 @@ for (i = 0; i < input.length; i++) {
   for (j = 0; j < inputLength; j++) {
     if (firstHalf.includes(secondHalf[j])) {
       total += alphabet.indexOf(secondHalf[j]);
-      //console.log(total);
+     // console.log(total);
       break;
     }
   }
